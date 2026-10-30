@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Student Outcome Prediction — CatBoost Report</title>
+
+  <style>
+    :root {
+      --ink: #183433;
+      --muted: #58706e;
+      --paper: #f3f6f3;
+      --line: #dce5df;
+      --green: #14765d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 36px 28px 44px;
+    }
+
+    .masthead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 28px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    button {
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: white;
+      color: var(--ink);
+      font: inherit;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .hero {
+      padding: 38px 42px;
+      border-radius: 22px;
+      background: #173e38;
+      color: white;
+    }
+
+    .eyebrow {
+      color: #b8dfc6;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 16px 0;
+      font-size: clamp(32px, 5vw, 51px);
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+    }
+
+    h1 span {
+      color: #bde7cb;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0;
+      color: #e1ece5;
+      font-size: 18px;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 6px 11px;
+      border-radius: 30px;
+      background: #31564d;
+      color: #e0f4e5;
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin: 20px 0 32px;
+    }
+
+    .stat {
+      padding: 19px 24px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: white;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 29px;
+      line-height: 1.2;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    section {
+      margin: 30px 0;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+    }
+
+    .intro {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .inputs {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .input {
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: white;
+    }
+
+    .input b {
+      display: block;
+      font-size: 15px;
+    }
+
+    .input small {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+    }
+
+    .input .num {
+      display: block;
+      margin-bottom: 9px;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .step {
+      padding: 13px 3px;
+      border-top: 3px solid #8cbda0;
+    }
+
+    .step strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .results {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: white;
+      break-inside: avoid;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .student {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .badge {
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 750;
+    }
+
+    .pass {
+      background: #e7f4eb;
+      color: #166c4e;
+    }
+
+    .fail {
+      background: #fcf0dc;
+      color: #89590c;
+    }
+
+    .percent {
+      font-size: 43px;
+      font-weight: 750;
+      line-height: 1.1;
+      letter-spacing: -0.05em;
+    }
+
+    .percent-label {
+      margin: 6px 0 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .bar {
+      height: 8px;
+      margin-bottom: 20px;
+      overflow: hidden;
+      border-radius: 8px;
+      background: #eaf0eb;
+    }
+
+    .bar i {
+      display: block;
+      height: 100%;
+      background: #438967;
+    }
+
+    .fail-card .bar i {
+      background: #bd9041;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 7px;
+      margin: 0;
+      font-size: 13px;
+    }
+
+    .details dt {
+      color: var(--muted);
+    }
+
+    .details dd {
+      margin: 0;
+      font-weight: 600;
+      text-align: right;
+    }
+
+    .interpretation {
+      margin: 18px 0 0;
+      padding-top: 15px;
+      border-top: 1px solid var(--line);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .explain {
+      margin-top: 15px;
+      padding: 14px 18px;
+      border-radius: 11px;
+      background: #e7eef4;
+      color: #284c6a;
+      font-size: 14px;
+    }
+
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .panel {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: white;
+    }
+
+    .panel h2 {
+      font-size: 20px;
+    }
+
+    .panel ul {
+      margin: 17px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .panel li {
+      position: relative;
+      margin: 11px 0;
+      padding-left: 20px;
+      font-size: 14px;
+    }
+
+    .panel li::before {
+      position: absolute;
+      left: 2px;
+      color: #3e8265;
+      font-weight: 800;
+      content: "•";
+    }
+
+    .status {
+      color: var(--muted);
+      font-size: 12px !important;
+    }
+
+    .local {
+      padding: 23px 26px;
+      border: 1px solid #d5e5d9;
+      border-radius: 16px;
+      background: #e9f2ec;
+    }
+
+    .local h2 {
+      font-size: 20px;
+    }
+
+    .local p {
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .callout {
+      margin-top: 22px;
+      padding: 19px 22px;
+      border: 1px solid #ead8b7;
+      border-left: 4px solid #b9862f;
+      border-radius: 12px;
+      background: #fff7e9;
+    }
+
+    .callout h2 {
+      color: #795317;
+      font-size: 17px;
+    }
+
+    .callout p {
+      margin: 7px 0 0;
+      color: #745f3b;
+      font-size: 14px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .footer p {
+      max-width: 770px;
+      margin: 0;
+    }
+
+    code {
+      font-family: ui-monospace, Consolas, monospace;
+      font-size: 0.9em;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    @media (max-width: 720px) {
+      main {
+        padding: 22px 16px;
+      }
+
+      .hero {
+        padding: 27px 23px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .inputs {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .results,
+      .columns,
+      .flow {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        gap: 8px;
+      }
+
+      .stat {
+        padding: 14px 11px;
+      }
+
+      .stat strong {
+        font-size: 25px;
+      }
+
+      .stat span {
+        font-size: 11px;
+      }
+
+      .masthead {
+        gap: 10px;
+        font-size: 10px;
+      }
+
+      .footer {
+        display: block;
+      }
+
+      .footer p {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 13mm;
+      }
+
+      body {
+        background: white;
+        font-size: 12px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      main {
+        max-width: none;
+        padding: 0;
+      }
+
+      .no-print {
+        display: none;
+      }
+
+      .hero {
+        padding: 23px 27px;
+      }
+
+      h1 {
+        font-size: 35px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .masthead {
+        margin-bottom: 15px;
+      }
+
+      .stats {
+        margin: 13px 0 21px;
+      }
+
+      .stat {
+        padding: 12px 17px;
+      }
+
+      .stat strong {
+        font-size: 23px;
+      }
+
+      section {
+        margin: 23px 0;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .card {
+        padding: 16px;
+      }
+
+      .percent {
+        font-size: 34px;
+      }
+
+      .details {
+        font-size: 11px;
+      }
+
+      .interpretation,
+      .step p,
+      .input small {
+        font-size: 12px;
+      }
+
+      .results,
+      .stats,
+      .inputs,
+      .columns,
+      .local,
+      .callout {
+        break-inside: avoid;
+      }
+
+      .footer {
+        font-size: 10px;
+      }
+
+      .page-two {
+        break-before: page;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <div class="masthead">
+      <span>Machine learning · Project report</span>
+
+      <button class="no-print" onclick="window.print()">
+        Print / Save as PDF
+      </button>
+    </div>
+
+    <header class="hero">
+      <div class="eyebrow">
+        CatBoost · Student outcome demonstration
+      </div>
+
+      <h1>
+        From student information<br>
+        <span>to a pass/fail estimate.</span>
+      </h1>
+
+      <p>
+        A model that learns from example student records and estimates
+        whether a new student is likely to pass.
+      </p>
+
+      <span class="tag">
+        Learning prototype · Artificial student data
+      </span>
+    </header>
+
+    <div class="stats">
+      <div class="stat">
+        <strong>1,000</strong>
+        <span>Artificial student records in the demo</span>
+      </div>
+
+      <div class="stat">
+        <strong>4</strong>
+        <span>Inputs considered together</span>
+      </div>
+
+      <div class="stat">
+        <strong>2</strong>
+        <span>Possible outcomes: pass or fail</span>
+      </div>
+    </div>
+
+    <section aria-labelledby="inputs-title">
+      <h2 id="inputs-title">What information does it use?</h2>
+
+      <p class="intro">
+        All four inputs help the model look for patterns.
+        It does not use just the category-based inputs.
+      </p>
+
+      <div class="inputs">
+        <div class="input">
+          <span class="num">01 / NUMBER</span>
+          <b>Study hours</b>
+          <small>Amount of time spent studying</small>
+        </div>
+
+        <div class="input">
+          <span class="num">02 / NUMBER</span>
+          <b>Attendance</b>
+          <small>Percentage of classes attended</small>
+        </div>
+
+        <div class="input">
+          <span class="num">03 / CATEGORY</span>
+          <b>Learning method</b>
+          <small>Classroom, online or self-study</small>
+        </div>
+
+        <div class="input">
+          <span class="num">04 / CATEGORY</span>
+          <b>Internet access</b>
+          <small>Yes or no</small>
+        </div>
+      </div>
+
+      <div class="flow">
+        <div class="step">
+          <strong>1. Learn from examples</strong>
+          <p>
+            CatBoost sees student details alongside pass/fail outcomes
+            and learns useful patterns.
+          </p>
+        </div>
+
+        <div class="step">
+          <strong>2. Improve step by step</strong>
+          <p>
+            It builds small decision trees—sets of questions about the
+            inputs. Each new tree helps reduce the combined model’s errors.
+          </p>
+        </div>
+
+        <div class="step">
+          <strong>3. Combine what it learned</strong>
+          <p>
+            For a new student, the trees’ contributions form a score
+            that becomes an estimated pass probability and a pass/fail label.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="results-title">
+      <h2 id="results-title">What did it predict?</h2>
+
+      <p class="intro">
+        Three example predictions reported from the Colab run.
+        The students’ actual outcomes are not available.
+      </p>
+
+      <div class="results">
+
+        <article class="card">
+          <div class="card-header">
+            <span class="student">STUDENT 1 · ROW 0</span>
+            <span class="badge pass">Predicted pass</span>
+          </div>
+
+          <div class="percent">96.2%</div>
+          <div class="percent-label">Estimated chance of passing</div>
+
+          <div
+            class="bar"
+            role="img"
+            aria-label="96.2 percent estimated pass probability"
+          >
+            <i style="width: 96.2%"></i>
+          </div>
+
+          <dl class="details">
+            <dt>Study hours</dt>
+            <dd>6.5</dd>
+
+            <dt>Attendance</dt>
+            <dd>92%</dd>
+
+            <dt>Learning method</dt>
+            <dd>Classroom</dd>
+
+            <dt>Internet access</dt>
+            <dd>Yes</dd>
+          </dl>
+
+          <p class="interpretation">
+            The model estimates a high chance of passing.
+            This is a prediction, not a guaranteed outcome.
+          </p>
+        </article>
+
+        <article class="card fail-card">
+          <div class="card-header">
+            <span class="student">STUDENT 2 · ROW 1</span>
+            <span class="badge fail">Predicted fail</span>
+          </div>
+
+          <div class="percent">3.8%</div>
+          <div class="percent-label">Estimated chance of passing</div>
+
+          <div
+            class="bar"
+            role="img"
+            aria-label="3.8 percent estimated pass probability"
+          >
+            <i style="width: 3.8%"></i>
+          </div>
+
+          <dl class="details">
+            <dt>Study hours</dt>
+            <dd>1.0</dd>
+
+            <dt>Attendance</dt>
+            <dd>50%</dd>
+
+            <dt>Learning method</dt>
+            <dd>Self Study</dd>
+
+            <dt>Internet access</dt>
+            <dd>No</dd>
+          </dl>
+
+          <p class="interpretation">
+            The model estimates a low chance of passing.
+            That is why its predicted outcome is “Fail.”
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <span class="student">STUDENT 3 · ROW 2</span>
+            <span class="badge pass">Predicted pass</span>
+          </div>
+
+          <div class="percent">68.4%</div>
+          <div class="percent-label">Estimated chance of passing</div>
+
+          <div
+            class="bar"
+            role="img"
+            aria-label="68.4 percent estimated pass probability"
+          >
+            <i style="width: 68.4%"></i>
+          </div>
+
+          <dl class="details">
+            <dt>Study hours</dt>
+            <dd>4.0</dd>
+
+            <dt>Attendance</dt>
+            <dd>75%</dd>
+
+            <dt>Learning method</dt>
+            <dd>Online</dd>
+
+            <dt>Internet access</dt>
+            <dd>Yes</dd>
+          </dl>
+
+          <p class="interpretation">
+            Passing is the more likely outcome, but the estimate
+            is less decisive than for Student 1.
+          </p>
+        </article>
+
+      </div>
+
+      <div class="explain">
+        <strong>How to read the percentages:</strong>
+        96.2% is an estimated chance of passing—not an exam mark
+        and not the model’s overall accuracy. This demo labels a
+        student “Pass” when that estimate is at least 50%.
+      </div>
+    </section>
+
+    <section
+      class="page-two columns"
+      aria-label="Understanding CatBoost"
+    >
+      <div class="panel">
+        <h2>How is CatBoost used here?</h2>
+
+        <p class="intro">
+          The four student inputs go into the model.
+          The pass/fail outcome is the answer it learns to predict.
+        </p>
+
+        <ul>
+          <li>
+            <strong>During training:</strong>
+            it learns from examples with known answers.
+          </li>
+
+          <li>
+            <strong>During prediction:</strong>
+            it uses the saved patterns; the new student’s answer
+            is not supplied.
+          </li>
+
+          <li>
+            <strong>Why it helps:</strong>
+            it can learn combinations of inputs instead of relying
+            on one manually written rule, such as “more than four
+            study hours means pass.”
+          </li>
+        </ul>
+
+        <p class="status">
+          CatBoost is a general prediction tool. It can also estimate
+          prices or predict other categories when trained for those tasks.
+        </p>
+      </div>
+
+      <div class="panel">
+        <h2>Why is it useful for categories?</h2>
+
+        <p class="intro">
+          “Online,” “Classroom” and “Self Study” are groups, not
+          quantities. CatBoost has built-in ways to learn from them.
+        </p>
+
+        <ul>
+          <li>
+            <strong>Less manual preparation:</strong>
+            declare the category columns; there is no need to create
+            a separate input column for every category yourself.
+          </li>
+
+          <li>
+            <strong>No invented ranking:</strong>
+            categories are not automatically treated as first,
+            second and third.
+          </li>
+
+          <li>
+            <strong>Careful use of outcomes:</strong>
+            when target-based category statistics are used, ordered
+            calculations avoid using a training row’s own answer
+            to encode that row.
+          </li>
+        </ul>
+
+        <p class="status">
+          Small category sets may use a simpler internal encoding.
+          The method depends on the training settings.
+        </p>
+      </div>
+    </section>
+
+    <div class="explain">
+      <strong>Is it better than every other model?</strong>
+      No. CatBoost is a useful starting point for data with many
+      categories because it reduces encoding work. XGBoost and
+      LightGBM also support categorical inputs. The best choice
+      is the one that performs well on the same unseen test data;
+      no comparison was run in this demo.
+    </div>
+
+    <section class="columns" aria-label="Benefits and evaluation">
+      <div class="panel">
+        <h2>What does this offer?</h2>
+
+        <ul>
+          <li>
+            <strong>A repeatable estimate:</strong>
+            apply the same learned model to new student records.
+          </li>
+
+          <li>
+            <strong>Mixed inputs:</strong>
+            use numbers and categories together.
+          </li>
+
+          <li>
+            <strong>More than a label:</strong>
+            see how strongly the model favours passing.
+          </li>
+
+          <li>
+            <strong>A reusable model:</strong>
+            save the trained model and load it again without retraining.
+          </li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h2>How is it checked?</h2>
+
+        <p class="intro">
+          The notebook separates the example data into three groups:
+        </p>
+
+        <ul>
+          <li>
+            <strong>600 training records:</strong>
+            used to learn patterns.
+          </li>
+
+          <li>
+            <strong>200 validation records:</strong>
+            used to decide when further training stops helping.
+          </li>
+
+          <li>
+            <strong>200 test records:</strong>
+            reserved for checking predictions against known labels.
+          </li>
+        </ul>
+
+        <p class="status">
+          <strong>Result not yet reported:</strong>
+          the test accuracy and confusion-matrix output have not
+          been supplied, so this report makes no accuracy claim.
+        </p>
+      </div>
+    </section>
+
+    <section class="local" aria-labelledby="local-title">
+      <h2 id="local-title">From Colab to a local computer</h2>
+
+      <p>
+        The workflow trains the model in Colab, saves it as
+        <code>student_catboost.cbm</code>, then loads it with
+        <code>predict.py</code> on Windows. The local prediction
+        script does not need the training dataset.
+      </p>
+
+      <p class="status">
+        <strong>Current status:</strong>
+        the script and model were located together in
+        <code>src/catboost_local/</code>.
+        A successful local prediction output has not yet been confirmed.
+      </p>
+    </section>
+
+    <aside class="callout">
+      <h2>What this demonstration does not establish</h2>
+
+      <p>
+        The records and outcomes were artificially generated using
+        chosen assumptions and randomness. These results do not
+        prove that a learning method or internet access causes
+        better outcomes. Real student data and further evaluation
+        would be needed before using this model for educational decisions.
+      </p>
+    </aside>
+
+    <footer class="footer">
+      <p>
+        <strong>Basis:</strong>
+        the supplied student-demo notebook, the three user-reported
+        Colab predictions, and local setup messages.
+        No model was retrained for this report.
+
+        <br>
+
+        <strong>Method references:</strong>
+
+        <a href="https://catboost.ai/docs/en/features/categorical-features">
+          CatBoost categorical inputs
+        </a>
+
+        ·
+
+        <a href="https://catboost.ai/docs/en/concepts/algorithm-main-stages_cat-to-numberic">
+          Category processing
+        </a>
+
+        ·
+
+        <a href="https://xgboost.readthedocs.io/en/stable/tutorials/categorical.html">
+          XGBoost
+        </a>
+
+        ·
+
+        <a href="https://lightgbm.readthedocs.io/en/stable/Features.html">
+          LightGBM
+        </a>
+      </p>
+
+      <span>
+        29 October 2026<br>
+        Student prediction demo
+      </span>
+    </footer>
+
+  </main>
+</body>
+</html>

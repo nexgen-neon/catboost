@@ -1,0 +1,20 @@
+[project]
+name = "catboost-local"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "nexgen-neon", email = "ishaandas@globalids.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "catboost>=1.2.10",
+    "pandas>=3.1.0",
+]
+
+[project.scripts]
+catboost-local = "catboost_local:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
