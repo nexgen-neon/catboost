@@ -1,0 +1,17 @@
+Training rows: 1000
+Test rows: 283
+Accuracy: 56.89%
+
+              precision    recall  f1-score   support
+
+     boolean       0.15      0.10      0.12        39
+ categorical       0.78      0.34      0.48        85
+    datetime       1.00      0.71      0.83         7
+  identifier       0.89      0.62      0.73        13
+     numeric       0.56      0.87      0.68       132
+        text       0.00      0.00      0.00         5
+        time       0.00      0.00      0.00         2
+
+    accuracy                           0.57       283
+   macro avg       0.48      0.38      0.41       283
+weighted avg       0.58      0.57      0.53       283
