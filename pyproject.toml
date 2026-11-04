@@ -9,7 +9,9 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "catboost>=1.2.10",
+    "joblib>=1.6.0",
     "pandas>=3.1.0",
+    "scikit-learn>=1.9.1",
 ]
 
 [project.scripts]

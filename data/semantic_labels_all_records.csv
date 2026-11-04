@@ -1,0 +1,1316 @@
+source_dataset,column_name,target_category
+amazon_ecommerce_1M.csv,user_id,identifier
+amazon_ecommerce_1M.csv,product_id,identifier
+amazon_ecommerce_1M.csv,category,categorical
+amazon_ecommerce_1M.csv,subcategory,categorical
+amazon_ecommerce_1M.csv,brand,categorical
+amazon_ecommerce_1M.csv,price,numeric
+amazon_ecommerce_1M.csv,discount,numeric
+amazon_ecommerce_1M.csv,final_price,numeric
+amazon_ecommerce_1M.csv,rating,numeric
+amazon_ecommerce_1M.csv,review_count,numeric
+amazon_ecommerce_1M.csv,stock,numeric
+amazon_ecommerce_1M.csv,seller_id,identifier
+amazon_ecommerce_1M.csv,seller_rating,numeric
+amazon_ecommerce_1M.csv,purchase_date,datetime
+amazon_ecommerce_1M.csv,shipping_time_days,numeric
+amazon_ecommerce_1M.csv,location,categorical
+amazon_ecommerce_1M.csv,device,categorical
+amazon_ecommerce_1M.csv,payment_method,categorical
+amazon_ecommerce_1M.csv,is_returned,boolean
+amazon_ecommerce_1M.csv,delivery_status,categorical
+student_performance.csv,StudyHours,numeric
+student_performance.csv,Attendance,numeric
+student_performance.csv,Resources,categorical
+student_performance.csv,Extracurricular,boolean
+student_performance.csv,Motivation,categorical
+student_performance.csv,Internet,boolean
+student_performance.csv,Gender,categorical
+student_performance.csv,Age,numeric
+student_performance.csv,LearningStyle,categorical
+student_performance.csv,OnlineCourses,numeric
+student_performance.csv,Discussions,boolean
+student_performance.csv,AssignmentCompletion,numeric
+student_performance.csv,ExamScore,numeric
+student_performance.csv,EduTech,boolean
+student_performance.csv,StressLevel,categorical
+student_performance.csv,FinalGrade,categorical
+Student_Marks.csv,number_courses,numeric
+Student_Marks.csv,time_study,numeric
+Student_Marks.csv,Marks,numeric
+Coffe_sales.csv,hour_of_day,categorical
+Coffe_sales.csv,cash_type,categorical
+Coffe_sales.csv,money,numeric
+Coffe_sales.csv,coffee_name,categorical
+Coffe_sales.csv,Time_of_Day,categorical
+Coffe_sales.csv,Weekday,categorical
+Coffe_sales.csv,Month_name,categorical
+Coffe_sales.csv,Weekdaysort,categorical
+Coffe_sales.csv,Monthsort,categorical
+Coffe_sales.csv,Date,datetime
+Coffe_sales.csv,Time,time
+boston.csv,CRIM,numeric
+boston.csv,ZN,numeric
+boston.csv,INDUS,numeric
+boston.csv,CHAS,boolean
+boston.csv,NOX,numeric
+boston.csv,RM,numeric
+boston.csv,AGE,numeric
+boston.csv,DIS,numeric
+boston.csv,RAD,categorical
+boston.csv,TAX,numeric
+boston.csv,PTRATIO,numeric
+boston.csv,B,numeric
+boston.csv,LSTAT,numeric
+boston.csv,MEDV,numeric
+irctc_business_insights_synthetic_data (1).csv,Booking_ID,identifier
+irctc_business_insights_synthetic_data (1).csv,User_ID,identifier
+irctc_business_insights_synthetic_data (1).csv,Booking_Date,datetime
+irctc_business_insights_synthetic_data (1).csv,Booking_Time,time
+irctc_business_insights_synthetic_data (1).csv,Travel_Date,datetime
+irctc_business_insights_synthetic_data (1).csv,Train_Number,identifier
+irctc_business_insights_synthetic_data (1).csv,Train_Name,categorical
+irctc_business_insights_synthetic_data (1).csv,Train_Type,categorical
+irctc_business_insights_synthetic_data (1).csv,Railway_Zone,categorical
+irctc_business_insights_synthetic_data (1).csv,Source_Station,categorical
+irctc_business_insights_synthetic_data (1).csv,Destination_Station,categorical
+irctc_business_insights_synthetic_data (1).csv,Route,categorical
+irctc_business_insights_synthetic_data (1).csv,Distance_KM,numeric
+irctc_business_insights_synthetic_data (1).csv,Travel_Class,categorical
+irctc_business_insights_synthetic_data (1).csv,Booking_Type,categorical
+irctc_business_insights_synthetic_data (1).csv,Booking_Channel,categorical
+irctc_business_insights_synthetic_data (1).csv,Partner_Platform,categorical
+irctc_business_insights_synthetic_data (1).csv,Passenger_Count,numeric
+irctc_business_insights_synthetic_data (1).csv,Base_Fare_INR,numeric
+irctc_business_insights_synthetic_data (1).csv,Surge_Tatkal_Charges_INR,numeric
+irctc_business_insights_synthetic_data (1).csv,Catering_Charges_INR,numeric
+irctc_business_insights_synthetic_data (1).csv,Taxes_And_Convenience_INR,numeric
+irctc_business_insights_synthetic_data (1).csv,Total_Revenue_INR,numeric
+irctc_business_insights_synthetic_data (1).csv,Payment_Method,categorical
+irctc_business_insights_synthetic_data (1).csv,Booking_Status,categorical
+irctc_business_insights_synthetic_data (1).csv,Train_Capacity,numeric
+irctc_business_insights_synthetic_data (1).csv,Occupancy_Percentage,numeric
+irctc_business_insights_synthetic_data (1).csv,On_Time_Delay_Mins,numeric
+ai_student_impact_dataset (1).csv,Student_ID,identifier
+ai_student_impact_dataset (1).csv,Major_Category,categorical
+ai_student_impact_dataset (1).csv,Year_of_Study,categorical
+ai_student_impact_dataset (1).csv,Pre_Semester_GPA,numeric
+ai_student_impact_dataset (1).csv,Weekly_GenAI_Hours,numeric
+ai_student_impact_dataset (1).csv,Primary_Use_Case,categorical
+ai_student_impact_dataset (1).csv,Prompt_Engineering_Skill,categorical
+ai_student_impact_dataset (1).csv,Tool_Diversity,numeric
+ai_student_impact_dataset (1).csv,Paid_Subscription,boolean
+ai_student_impact_dataset (1).csv,Traditional_Study_Hours,numeric
+ai_student_impact_dataset (1).csv,Perceived_AI_Dependency,numeric
+ai_student_impact_dataset (1).csv,Institutional_Policy,categorical
+ai_student_impact_dataset (1).csv,Anxiety_Level_During_Exams,numeric
+ai_student_impact_dataset (1).csv,Post_Semester_GPA,numeric
+ai_student_impact_dataset (1).csv,Skill_Retention_Score,numeric
+ai_student_impact_dataset (1).csv,Burnout_Risk_Level,categorical
+train.csv,Id,identifier
+train.csv,MSSubClass,categorical
+train.csv,MSZoning,categorical
+train.csv,LotFrontage,numeric
+train.csv,LotArea,numeric
+train.csv,Street,categorical
+train.csv,Alley,categorical
+train.csv,LotShape,categorical
+train.csv,LandContour,categorical
+train.csv,Utilities,categorical
+train.csv,LotConfig,categorical
+train.csv,LandSlope,categorical
+train.csv,Neighborhood,categorical
+train.csv,Condition1,categorical
+train.csv,Condition2,categorical
+train.csv,BldgType,categorical
+train.csv,HouseStyle,categorical
+train.csv,OverallQual,categorical
+train.csv,OverallCond,categorical
+train.csv,YearBuilt,numeric
+train.csv,YearRemodAdd,numeric
+train.csv,RoofStyle,categorical
+train.csv,RoofMatl,categorical
+train.csv,Exterior1st,categorical
+train.csv,Exterior2nd,categorical
+train.csv,MasVnrType,categorical
+train.csv,MasVnrArea,numeric
+train.csv,ExterQual,categorical
+train.csv,ExterCond,categorical
+train.csv,Foundation,categorical
+train.csv,BsmtQual,categorical
+train.csv,BsmtCond,categorical
+train.csv,BsmtExposure,categorical
+train.csv,BsmtFinType1,categorical
+train.csv,BsmtFinSF1,numeric
+train.csv,BsmtFinType2,categorical
+train.csv,BsmtFinSF2,numeric
+train.csv,BsmtUnfSF,numeric
+train.csv,TotalBsmtSF,numeric
+train.csv,Heating,categorical
+train.csv,HeatingQC,categorical
+train.csv,CentralAir,boolean
+train.csv,Electrical,categorical
+train.csv,1stFlrSF,numeric
+train.csv,2ndFlrSF,numeric
+train.csv,LowQualFinSF,numeric
+train.csv,GrLivArea,numeric
+train.csv,BsmtFullBath,numeric
+train.csv,BsmtHalfBath,numeric
+train.csv,FullBath,numeric
+train.csv,HalfBath,numeric
+train.csv,BedroomAbvGr,numeric
+train.csv,KitchenAbvGr,numeric
+train.csv,KitchenQual,categorical
+train.csv,TotRmsAbvGrd,numeric
+train.csv,Functional,categorical
+train.csv,Fireplaces,numeric
+train.csv,FireplaceQu,categorical
+train.csv,GarageType,categorical
+train.csv,GarageYrBlt,numeric
+train.csv,GarageFinish,categorical
+train.csv,GarageCars,numeric
+train.csv,GarageArea,numeric
+train.csv,GarageQual,categorical
+train.csv,GarageCond,categorical
+train.csv,PavedDrive,categorical
+train.csv,WoodDeckSF,numeric
+train.csv,OpenPorchSF,numeric
+train.csv,EnclosedPorch,numeric
+train.csv,3SsnPorch,numeric
+train.csv,ScreenPorch,numeric
+train.csv,PoolArea,numeric
+train.csv,PoolQC,categorical
+train.csv,Fence,categorical
+train.csv,MiscFeature,categorical
+train.csv,MiscVal,numeric
+train.csv,MoSold,categorical
+train.csv,YrSold,numeric
+train.csv,SaleType,categorical
+train.csv,SaleCondition,categorical
+train.csv,SalePrice,numeric
+student_grade_ses_dataset.csv,student_id,identifier
+student_grade_ses_dataset.csv,academic_year,categorical
+student_grade_ses_dataset.csv,survey_date,datetime
+student_grade_ses_dataset.csv,age,numeric
+student_grade_ses_dataset.csv,gender,categorical
+student_grade_ses_dataset.csv,grade_level,categorical
+student_grade_ses_dataset.csv,school_type,categorical
+student_grade_ses_dataset.csv,residence_type,categorical
+student_grade_ses_dataset.csv,family_size,numeric
+student_grade_ses_dataset.csv,num_siblings,numeric
+student_grade_ses_dataset.csv,single_parent_household,boolean
+student_grade_ses_dataset.csv,family_income_bracket,categorical
+student_grade_ses_dataset.csv,annual_family_income_inr,numeric
+student_grade_ses_dataset.csv,father_education_level,categorical
+student_grade_ses_dataset.csv,mother_education_level,categorical
+student_grade_ses_dataset.csv,father_occupation,categorical
+student_grade_ses_dataset.csv,mother_occupation,categorical
+student_grade_ses_dataset.csv,has_internet_access,boolean
+student_grade_ses_dataset.csv,has_computer_or_laptop,boolean
+student_grade_ses_dataset.csv,distance_to_school_km,numeric
+student_grade_ses_dataset.csv,scholarship_status,categorical
+student_grade_ses_dataset.csv,extra_tutoring,boolean
+student_grade_ses_dataset.csv,parental_involvement_score,numeric
+student_grade_ses_dataset.csv,study_hours_per_week,numeric
+student_grade_ses_dataset.csv,attendance_rate_pct,numeric
+student_grade_ses_dataset.csv,previous_year_grade_pct,numeric
+student_grade_ses_dataset.csv,final_grade_pct,numeric
+student_grade_ses_dataset.csv,grade_class,categorical
+student_grade_ses_dataset.csv,at_risk_flag,boolean
+Social_media_impact_on_life.csv,Student_ID,identifier
+Social_media_impact_on_life.csv,Age,numeric
+Social_media_impact_on_life.csv,Gender,categorical
+Social_media_impact_on_life.csv,Academic_Level,categorical
+Social_media_impact_on_life.csv,Primary_Platform,categorical
+Social_media_impact_on_life.csv,Daily_Usage_Hours,numeric
+Social_media_impact_on_life.csv,Weekend_Extra_Hours,numeric
+Social_media_impact_on_life.csv,Device_Type,categorical
+Social_media_impact_on_life.csv,Sleep_Duration_Hours,numeric
+Social_media_impact_on_life.csv,Sleep_Quality_Score,numeric
+Social_media_impact_on_life.csv,Late_Night_Usage,boolean
+Social_media_impact_on_life.csv,Social_Comparison_Frequency,categorical
+Social_media_impact_on_life.csv,Perceived_Stress_Score,numeric
+Social_media_impact_on_life.csv,Mental_Health_Index,numeric
+Social_media_impact_on_life.csv,Academic_Performance_GPA,numeric
+Social_media_impact_on_life.csv,Overall_Impact,categorical
+documents.csv,document_number,identifier
+documents.csv,publication_date,datetime
+documents.csv,type,categorical
+documents.csv,subtype,categorical
+documents.csv,executive_order_number,identifier
+documents.csv,title,text
+documents.csv,action,text
+documents.csv,abstract,text
+documents.csv,agencies,categorical
+documents.csv,agency_slugs,categorical
+documents.csv,ai_focus,categorical
+documents.csv,matched_terms,text
+documents.csv,significant,boolean
+documents.csv,comments_close_on,datetime
+documents.csv,effective_on,datetime
+documents.csv,signing_date,datetime
+documents.csv,docket_ids,identifier
+documents.csv,regulation_id_numbers,identifier
+documents.csv,topics,categorical
+documents.csv,citation,identifier
+documents.csv,excerpt,text
+documents.csv,html_url,text
+documents.csv,pdf_url,text
+documents.csv,comment_url,text
+demonyms.csv,lemma,text
+demonyms.csv,pos,categorical
+demonyms.csv,gender,categorical
+demonyms.csv,place,categorical
+demonyms.csv,department,categorical
+demonyms.csv,definition,text
+demonyms.csv,definitions,text
+demonyms.csv,sense_count,numeric
+demonyms.csv,ipa,text
+demonyms.csv,zipf_frequency,numeric
+demonyms.csv,scrabble_form,text
+demonyms.csv,scrabble_valid,boolean
+demonyms.csv,motvalide_url,text
+district_prices_monthly.csv,year_month,datetime
+district_prices_monthly.csv,district,categorical
+district_prices_monthly.csv,side,categorical
+district_prices_monthly.csv,tier,categorical
+district_prices_monthly.csv,secondary_price_per_m2_try,numeric
+district_prices_monthly.csv,secondary_price_per_m2_usd,numeric
+district_prices_monthly.csv,new_construction_price_per_m2_try,numeric
+district_prices_monthly.csv,rental_per_m2_monthly_try,numeric
+district_prices_monthly.csv,n_listings_secondary,numeric
+district_prices_monthly.csv,n_listings_new_construction,numeric
+district_prices_monthly.csv,n_listings_rental,numeric
+district_prices_monthly.csv,try_usd_rate,numeric
+district_prices_monthly.csv,cbrt_repo_rate_pct,numeric
+district_prices_monthly.csv,avg_mortgage_rate_pct,numeric
+district_prices_monthly.csv,inflation_yoy_pct,numeric
+michigan_hospital_history.csv,Year,numeric
+michigan_hospital_history.csv,Hospital Name,categorical
+michigan_hospital_history.csv,Rural Versus Urban,categorical
+michigan_hospital_history.csv,Net Income,numeric
+michigan_hospital_history.csv,Total Patient Revenue,numeric
+michigan_hospital_history.csv,Cost of Charity Care,numeric
+michigan_hospital_history.csv,Number of Beds,numeric
+michigan_hospital_history.csv,City,categorical
+michigan_hospital_history.csv,State,categorical
+judgments.csv,question_id,identifier
+judgments.csv,model,categorical
+judgments.csv,model_key,identifier
+judgments.csv,task,categorical
+judgments.csv,category,categorical
+judgments.csv,turn,numeric
+judgments.csv,score,numeric
+judgments.csv,is_perfect,boolean
+judgments.csv,n_instructions,numeric
+judgments.csv,n_instructions_followed,numeric
+judgments.csv,frac_instructions_followed,numeric
+judgments.csv,tstamp,datetime
+judgments.csv,judged_at_utc,datetime
+judgments.csv,source_row_idx,identifier
+judgments-selected-columns.csv,question_id,identifier
+judgments-selected-columns.csv,model,categorical
+judgments-selected-columns.csv,model_key,identifier
+judgments-selected-columns.csv,task,categorical
+judgments-selected-columns.csv,category,categorical
+judgments-selected-columns.csv,turn,numeric
+judgments-selected-columns.csv,score,numeric
+judgments-selected-columns.csv,is_perfect,boolean
+judgments-selected-columns.csv,n_instructions,numeric
+judgments-selected-columns.csv,n_instructions_followed,numeric
+univ-length-over10.short-col-names.csv,targetTrend,numeric
+univ-length-over10.short-col-names.csv,pred2ndNext,unknown
+univ-length-over10.short-col-names.csv,pred1rstNext,unknown
+univ-length-over10.short-col-names.csv,predWillFollowIncreaseCapacity,boolean
+univ-length-over10.short-col-names.csv,DrawId,identifier
+univ-length-over10.short-col-names.csv,Ft-ULen-Over10,numeric
+univ-length-over10.short-col-names.csv,Ft-ULen-Over10-didFollowIncreaseCapacity,boolean
+univ-length-over10.short-col-names.csv,Ft-ULen-Over10-LastMovingDirection,categorical
+univ-length-over10.short-col-names.csv,Ft-ULen-Over10-ShortMovingDirectionBalance,numeric
+univ-length-over10.short-col-names.csv,Ft-ULen-Over10-PreviousLastMovingDirection,categorical
+univ-length-over10.short-col-names.csv,Ft-ULen-Over10-LargerMovingDirectionBalance,numeric
+univ-length-over10.short-col-names.csv,Ft-ULen-Over10-sameValueSerie,numeric
+univ-length-over10.short-col-names.csv,Ft-ULen-Over10-greaterThanSerie,numeric
+univ-length-over10.short-col-names.csv,Ft-ULen-Over10-lowerThanSerie,numeric
+univ-length-over10.short-col-names.csv,Ft-ULen-Over10-CanIncreaseOf,numeric
+univ-length-over10.short-col-names.csv,Ft-ULen-Over10-CanDecreaseOf,numeric
+univ-length-over10.short-col-names.csv,Ft-Effectifs-Over10-andSupa20-MeanEffsIn,numeric
+univ-length-over10.short-col-names.csv,Ft-Effectifs-Over10-andSupa20-MeanEffsOut,numeric
+univ-length-over10.short-col-names.csv,Ft-Effectifs-Over10-andSupa20-MedianEffsIn,numeric
+univ-length-over10.short-col-names.csv,Ft-Effectifs-Over10-andSupa20-MedianEffsOut,numeric
+benchmark_1500.csv,task_id,identifier
+benchmark_1500.csv,domain,categorical
+benchmark_1500.csv,difficulty,categorical
+benchmark_1500.csv,prompt,text
+benchmark_1500.csv,context,text
+benchmark_1500.csv,expected_answer,text
+benchmark_1500.csv,agent_answer,text
+benchmark_1500.csv,failure_type,categorical
+benchmark_1500.csv,failure_severity,categorical
+benchmark_1500.csv,notes,text
+DATAELEMENTDESCRIPTION.csv,index,identifier
+DATAELEMENTDESCRIPTION.csv,PAGE_NAME,categorical
+DATAELEMENTDESCRIPTION.csv,COLUMN_NAME,categorical
+DATAELEMENTDESCRIPTION.csv,DATA_TYPE,categorical
+DATAELEMENTDESCRIPTION.csv,IS_PERCENT_DATA,boolean
+DATAELEMENTDESCRIPTION.csv,DESCRIPTION,text
+DATAELEMENTDESCRIPTION.csv,REFERENCE,text
+anime_dataset.csv,mal_id,identifier
+anime_dataset.csv,title_romaji,text
+anime_dataset.csv,title_english,text
+anime_dataset.csv,title_native,text
+anime_dataset.csv,synonyms,text
+anime_dataset.csv,format,categorical
+anime_dataset.csv,status,categorical
+anime_dataset.csv,episodes,numeric
+anime_dataset.csv,duration_min,numeric
+anime_dataset.csv,start_year,numeric
+anime_dataset.csv,start_month,categorical
+anime_dataset.csv,start_day,categorical
+anime_dataset.csv,end_year,numeric
+anime_dataset.csv,end_month,categorical
+anime_dataset.csv,end_day,categorical
+anime_dataset.csv,season,categorical
+anime_dataset.csv,season_year,numeric
+anime_dataset.csv,source,categorical
+anime_dataset.csv,rating,categorical
+anime_dataset.csv,is_adult,boolean
+anime_dataset.csv,score,numeric
+anime_dataset.csv,scored_by,numeric
+anime_dataset.csv,rank,numeric
+anime_dataset.csv,popularity_rank,numeric
+anime_dataset.csv,members,numeric
+anime_dataset.csv,favorites,numeric
+anime_dataset.csv,genres,categorical
+anime_dataset.csv,tags,categorical
+anime_dataset.csv,studios,categorical
+anime_dataset.csv,description,text
+anime_dataset.csv,cover_image,text
+anime_dataset.csv,site_url,text
+fifa_wc_mens_match_dataset_1970_2022.csv,tournament_name,categorical
+fifa_wc_mens_match_dataset_1970_2022.csv,stage_name,categorical
+fifa_wc_mens_match_dataset_1970_2022.csv,group_name,categorical
+fifa_wc_mens_match_dataset_1970_2022.csv,group_stage,boolean
+fifa_wc_mens_match_dataset_1970_2022.csv,knockout_stage,boolean
+fifa_wc_mens_match_dataset_1970_2022.csv,replayed,boolean
+fifa_wc_mens_match_dataset_1970_2022.csv,replay,boolean
+fifa_wc_mens_match_dataset_1970_2022.csv,match_date,datetime
+fifa_wc_mens_match_dataset_1970_2022.csv,match_time,time
+fifa_wc_mens_match_dataset_1970_2022.csv,stadium_name,categorical
+fifa_wc_mens_match_dataset_1970_2022.csv,city_name,categorical
+fifa_wc_mens_match_dataset_1970_2022.csv,country_name,categorical
+fifa_wc_mens_match_dataset_1970_2022.csv,team_name,categorical
+fifa_wc_mens_match_dataset_1970_2022.csv,team_code,identifier
+fifa_wc_mens_match_dataset_1970_2022.csv,opponent_name,categorical
+fifa_wc_mens_match_dataset_1970_2022.csv,opponent_code,identifier
+fifa_wc_mens_match_dataset_1970_2022.csv,home_team,boolean
+fifa_wc_mens_match_dataset_1970_2022.csv,away_team,boolean
+fifa_wc_mens_match_dataset_1970_2022.csv,goals_for,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,goals_against,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,extra_time,boolean
+fifa_wc_mens_match_dataset_1970_2022.csv,penalty_shootout,boolean
+fifa_wc_mens_match_dataset_1970_2022.csv,penalties_for,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,penalties_against,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,result,categorical
+fifa_wc_mens_match_dataset_1970_2022.csv,is_host,boolean
+fifa_wc_mens_match_dataset_1970_2022.csv,yellow_cards,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,red_cards,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,possession,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,shots,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,shots_on_target,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,passes_completed,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,passes_attempted,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,corners,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,fouls,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,team_prior_matches,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,team_prior_win_rate,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,team_prior_goals_scored_avg,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,team_prior_goals_conceded_avg,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,opp_prior_matches,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,opp_prior_win_rate,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,opp_prior_goals_scored_avg,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,opp_prior_goals_conceded_avg,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,h2h_prior_matches,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,h2h_prior_win_rate,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,team_curr_form_pts_avg,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,team_curr_goals_scored_avg,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,team_curr_goals_conceded_avg,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,opp_curr_form_pts_avg,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,opp_curr_goals_scored_avg,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,opp_curr_goals_conceded_avg,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,possession_h1,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,possession_h2,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,shots_h1,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,shots_h2,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,shots_on_target_h1,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,shots_on_target_h2,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,passes_completed_h1,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,passes_completed_h2,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,passes_attempted_h1,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,passes_attempted_h2,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,corners_h1,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,corners_h2,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,fouls_h1,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,fouls_h2,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,yellow_cards_h1,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,yellow_cards_h2,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,red_cards_h1,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,red_cards_h2,numeric
+fifa_wc_mens_match_dataset_1970_2022.csv,outcome,categorical
+movie_feelings_dataset.csv,imdb_id,identifier
+movie_feelings_dataset.csv,title,text
+movie_feelings_dataset.csv,year,numeric
+movie_feelings_dataset.csv,title_year,text
+movie_feelings_dataset.csv,plot,text
+movie_feelings_dataset.csv,imdb_rating,numeric
+movie_feelings_dataset.csv,tomatometer,numeric
+movie_feelings_dataset.csv,metascore,numeric
+movie_feelings_dataset.csv,avg_rating,numeric
+movie_feelings_dataset.csv,f1_skepticism,numeric
+movie_feelings_dataset.csv,f1_serenity,numeric
+movie_feelings_dataset.csv,f1_fear,numeric
+movie_feelings_dataset.csv,f1_disgust,numeric
+movie_feelings_dataset.csv,f1_solidarity,numeric
+movie_feelings_dataset.csv,f1_elation,numeric
+movie_feelings_dataset.csv,f1_envy,numeric
+movie_feelings_dataset.csv,f1_puzzlement,numeric
+movie_feelings_dataset.csv,f1_recklessness,numeric
+movie_feelings_dataset.csv,f1_loyalty,numeric
+movie_feelings_dataset.csv,f1_trust,numeric
+movie_feelings_dataset.csv,f1_sadness,numeric
+movie_feelings_dataset.csv,f1_shame,numeric
+movie_feelings_dataset.csv,f1_catharsis,numeric
+movie_feelings_dataset.csv,f1_unease,numeric
+movie_feelings_dataset.csv,f1_introspection,numeric
+movie_feelings_dataset.csv,f1_excitement,numeric
+movie_feelings_dataset.csv,f1_riskiness,numeric
+movie_feelings_dataset.csv,f1_mischief,numeric
+movie_feelings_dataset.csv,f1_enlightenment,numeric
+movie_feelings_dataset.csv,f1_love,numeric
+movie_feelings_dataset.csv,f1_tension,numeric
+movie_feelings_dataset.csv,f1_sarcasm,numeric
+movie_feelings_dataset.csv,f1_frustration,numeric
+movie_feelings_dataset.csv,f1_longing,numeric
+movie_feelings_dataset.csv,f1_awe,numeric
+movie_feelings_dataset.csv,f1_defiance,numeric
+movie_feelings_dataset.csv,f1_amusement,numeric
+movie_feelings_dataset.csv,f1_vulnerability,numeric
+movie_feelings_dataset.csv,f1_surprise,numeric
+movie_feelings_dataset.csv,f1_compassion,numeric
+movie_feelings_dataset.csv,f1_resentment,numeric
+movie_feelings_dataset.csv,f1_triumph,numeric
+movie_feelings_dataset.csv,f1_happiness,numeric
+movie_feelings_dataset.csv,f1_acceptance,numeric
+movie_feelings_dataset.csv,f1_bravery,numeric
+movie_feelings_dataset.csv,f1_hope,numeric
+movie_feelings_dataset.csv,f1_conflict,numeric
+movie_feelings_dataset.csv,f1_exhilaration,numeric
+movie_feelings_dataset.csv,f1_inspiration,numeric
+movie_feelings_dataset.csv,f1_curiosity,numeric
+movie_feelings_dataset.csv,f1_regret,numeric
+movie_feelings_dataset.csv,f1_nostalgia,numeric
+movie_feelings_dataset.csv,f1_irony,numeric
+movie_feelings_dataset.csv,f1_despair,numeric
+movie_feelings_dataset.csv,f1_resignation,numeric
+movie_feelings_dataset.csv,f1_closeness,numeric
+movie_feelings_dataset.csv,f1_adrenaline,numeric
+movie_feelings_dataset.csv,f1_belonging,numeric
+movie_feelings_dataset.csv,f1_anger,numeric
+movie_feelings_dataset.csv,plot_feelings,categorical
+movie_feelings_dataset.csv,f2_skepticism,boolean
+movie_feelings_dataset.csv,f2_serenity,boolean
+movie_feelings_dataset.csv,f2_fear,boolean
+movie_feelings_dataset.csv,f2_disgust,boolean
+movie_feelings_dataset.csv,f2_solidarity,boolean
+movie_feelings_dataset.csv,f2_elation,boolean
+movie_feelings_dataset.csv,f2_envy,boolean
+movie_feelings_dataset.csv,f2_puzzlement,boolean
+movie_feelings_dataset.csv,f2_recklessness,boolean
+movie_feelings_dataset.csv,f2_loyalty,boolean
+movie_feelings_dataset.csv,f2_trust,boolean
+movie_feelings_dataset.csv,f2_sadness,boolean
+movie_feelings_dataset.csv,f2_shame,boolean
+movie_feelings_dataset.csv,f2_catharsis,boolean
+movie_feelings_dataset.csv,f2_unease,boolean
+movie_feelings_dataset.csv,f2_introspection,boolean
+movie_feelings_dataset.csv,f2_excitement,boolean
+movie_feelings_dataset.csv,f2_riskiness,boolean
+movie_feelings_dataset.csv,f2_mischief,boolean
+movie_feelings_dataset.csv,f2_enlightenment,boolean
+movie_feelings_dataset.csv,f2_love,boolean
+movie_feelings_dataset.csv,f2_tension,boolean
+movie_feelings_dataset.csv,f2_sarcasm,boolean
+movie_feelings_dataset.csv,f2_frustration,boolean
+movie_feelings_dataset.csv,f2_longing,boolean
+movie_feelings_dataset.csv,f2_awe,boolean
+movie_feelings_dataset.csv,f2_defiance,boolean
+movie_feelings_dataset.csv,f2_amusement,boolean
+movie_feelings_dataset.csv,f2_vulnerability,boolean
+movie_feelings_dataset.csv,f2_surprise,boolean
+movie_feelings_dataset.csv,f2_compassion,boolean
+movie_feelings_dataset.csv,f2_resentment,boolean
+movie_feelings_dataset.csv,f2_triumph,boolean
+movie_feelings_dataset.csv,f2_happiness,boolean
+movie_feelings_dataset.csv,f2_acceptance,boolean
+movie_feelings_dataset.csv,f2_bravery,boolean
+movie_feelings_dataset.csv,f2_hope,boolean
+movie_feelings_dataset.csv,f2_conflict,boolean
+movie_feelings_dataset.csv,f2_exhilaration,boolean
+movie_feelings_dataset.csv,f2_inspiration,boolean
+movie_feelings_dataset.csv,f2_curiosity,boolean
+movie_feelings_dataset.csv,f2_regret,boolean
+movie_feelings_dataset.csv,f2_nostalgia,boolean
+movie_feelings_dataset.csv,f2_irony,boolean
+movie_feelings_dataset.csv,f2_despair,boolean
+movie_feelings_dataset.csv,f2_resignation,boolean
+movie_feelings_dataset.csv,f2_closeness,boolean
+movie_feelings_dataset.csv,f2_adrenaline,boolean
+movie_feelings_dataset.csv,f2_belonging,boolean
+movie_feelings_dataset.csv,f2_anger,boolean
+movie_feelings_dataset.csv,gpt_feelings,categorical
+movie_feelings_dataset.csv,f3_skepticism,boolean
+movie_feelings_dataset.csv,f3_serenity,boolean
+movie_feelings_dataset.csv,f3_fear,boolean
+movie_feelings_dataset.csv,f3_disgust,boolean
+movie_feelings_dataset.csv,f3_solidarity,boolean
+movie_feelings_dataset.csv,f3_elation,boolean
+movie_feelings_dataset.csv,f3_envy,boolean
+movie_feelings_dataset.csv,f3_puzzlement,boolean
+movie_feelings_dataset.csv,f3_recklessness,boolean
+movie_feelings_dataset.csv,f3_loyalty,boolean
+movie_feelings_dataset.csv,f3_trust,boolean
+movie_feelings_dataset.csv,f3_sadness,boolean
+movie_feelings_dataset.csv,f3_shame,boolean
+movie_feelings_dataset.csv,f3_catharsis,boolean
+movie_feelings_dataset.csv,f3_unease,boolean
+movie_feelings_dataset.csv,f3_introspection,boolean
+movie_feelings_dataset.csv,f3_excitement,boolean
+movie_feelings_dataset.csv,f3_riskiness,boolean
+movie_feelings_dataset.csv,f3_mischief,boolean
+movie_feelings_dataset.csv,f3_enlightenment,boolean
+movie_feelings_dataset.csv,f3_love,boolean
+movie_feelings_dataset.csv,f3_tension,boolean
+movie_feelings_dataset.csv,f3_sarcasm,boolean
+movie_feelings_dataset.csv,f3_frustration,boolean
+movie_feelings_dataset.csv,f3_longing,boolean
+movie_feelings_dataset.csv,f3_awe,boolean
+movie_feelings_dataset.csv,f3_defiance,boolean
+movie_feelings_dataset.csv,f3_amusement,boolean
+movie_feelings_dataset.csv,f3_vulnerability,boolean
+movie_feelings_dataset.csv,f3_surprise,boolean
+movie_feelings_dataset.csv,f3_compassion,boolean
+movie_feelings_dataset.csv,f3_resentment,boolean
+movie_feelings_dataset.csv,f3_triumph,boolean
+movie_feelings_dataset.csv,f3_happiness,boolean
+movie_feelings_dataset.csv,f3_acceptance,boolean
+movie_feelings_dataset.csv,f3_bravery,boolean
+movie_feelings_dataset.csv,f3_hope,boolean
+movie_feelings_dataset.csv,f3_conflict,boolean
+movie_feelings_dataset.csv,f3_exhilaration,boolean
+movie_feelings_dataset.csv,f3_inspiration,boolean
+movie_feelings_dataset.csv,f3_curiosity,boolean
+movie_feelings_dataset.csv,f3_regret,boolean
+movie_feelings_dataset.csv,f3_nostalgia,boolean
+movie_feelings_dataset.csv,f3_irony,boolean
+movie_feelings_dataset.csv,f3_despair,boolean
+movie_feelings_dataset.csv,f3_resignation,boolean
+movie_feelings_dataset.csv,f3_closeness,boolean
+movie_feelings_dataset.csv,f3_adrenaline,boolean
+movie_feelings_dataset.csv,f3_belonging,boolean
+movie_feelings_dataset.csv,f3_anger,boolean
+BRFSS Physical Acticity.csv,Unnamed: 0,unknown
+BRFSS Physical Acticity.csv,location_id,identifier
+BRFSS Physical Acticity.csv,year,numeric
+BRFSS Physical Acticity.csv,PAINDX2_yes_value,numeric
+BRFSS Physical Acticity.csv,PAINDX2_yes_sample,numeric
+BRFSS Physical Acticity.csv,PAINDX2_no_value,numeric
+BRFSS Physical Acticity.csv,PAINDX2_no_sample,numeric
+BRFSS Physical Acticity.csv,PASTAE2_yes_value,numeric
+BRFSS Physical Acticity.csv,PASTAE2_yes_sample,numeric
+BRFSS Physical Acticity.csv,PASTAE2_no_value,numeric
+BRFSS Physical Acticity.csv,PASTAE2_no_sample,numeric
+BRFSS Physical Acticity.csv,PASTRNG_yes_value,numeric
+BRFSS Physical Acticity.csv,PASTRNG_yes_sample,numeric
+BRFSS Physical Acticity.csv,PASTRNG_no_value,numeric
+BRFSS Physical Acticity.csv,PASTRNG_no_sample,numeric
+BRFSS Physical Acticity.csv,TOTINDA_yes_value,numeric
+BRFSS Physical Acticity.csv,TOTINDA_yes_sample,numeric
+BRFSS Physical Acticity.csv,TOTINDA_no_value,numeric
+BRFSS Physical Acticity.csv,TOTINDA_no_sample,numeric
+social_media_addiction_mental_wellbeing.csv,User_ID,identifier
+social_media_addiction_mental_wellbeing.csv,Age,numeric
+social_media_addiction_mental_wellbeing.csv,Gender,categorical
+social_media_addiction_mental_wellbeing.csv,Occupation,categorical
+social_media_addiction_mental_wellbeing.csv,Relationship_Status,categorical
+social_media_addiction_mental_wellbeing.csv,Primary_Platform,categorical
+social_media_addiction_mental_wellbeing.csv,Daily_Usage_Hours,numeric
+social_media_addiction_mental_wellbeing.csv,Platforms_Used_Count,numeric
+social_media_addiction_mental_wellbeing.csv,Posts_Per_Week,numeric
+social_media_addiction_mental_wellbeing.csv,Late_Night_Usage,boolean
+social_media_addiction_mental_wellbeing.csv,First_Check_Morning,categorical
+social_media_addiction_mental_wellbeing.csv,Notifications_Per_Day,numeric
+social_media_addiction_mental_wellbeing.csv,FOMO_Score,numeric
+social_media_addiction_mental_wellbeing.csv,Social_Comparison_Score,numeric
+social_media_addiction_mental_wellbeing.csv,Validation_Seeking_Score,numeric
+social_media_addiction_mental_wellbeing.csv,Scroll_Without_Purpose,numeric
+social_media_addiction_mental_wellbeing.csv,Tried_To_Cut_Back,boolean
+social_media_addiction_mental_wellbeing.csv,Failed_To_Cut_Back,boolean
+social_media_addiction_mental_wellbeing.csv,Anxiety_Score,numeric
+social_media_addiction_mental_wellbeing.csv,Depression_Score,numeric
+social_media_addiction_mental_wellbeing.csv,Loneliness_Score,numeric
+social_media_addiction_mental_wellbeing.csv,Self_Esteem_Score,numeric
+social_media_addiction_mental_wellbeing.csv,Sleep_Quality_Score,numeric
+social_media_addiction_mental_wellbeing.csv,Sleep_Hours,numeric
+social_media_addiction_mental_wellbeing.csv,Productivity_Loss_Score,numeric
+social_media_addiction_mental_wellbeing.csv,Offline_Relationship_Quality,numeric
+social_media_addiction_mental_wellbeing.csv,Physical_Activity_Hrs_Week,numeric
+social_media_addiction_mental_wellbeing.csv,Screen_Free_Time_Hrs,numeric
+social_media_addiction_mental_wellbeing.csv,Mental_Wellbeing_Score,numeric
+social_media_addiction_mental_wellbeing.csv,Addiction_Level,categorical
+2018-personality-data.csv,userid,identifier
+2018-personality-data.csv, openness,numeric
+2018-personality-data.csv, agreeableness,numeric
+2018-personality-data.csv, emotional_stability,numeric
+2018-personality-data.csv, conscientiousness,numeric
+2018-personality-data.csv, extraversion,numeric
+2018-personality-data.csv, assigned metric,categorical
+2018-personality-data.csv, assigned condition,categorical
+2018-personality-data.csv, movie_1,identifier
+2018-personality-data.csv, predicted_rating_1,numeric
+2018-personality-data.csv, movie_2,identifier
+2018-personality-data.csv, predicted_rating_2,numeric
+2018-personality-data.csv, movie_3,identifier
+2018-personality-data.csv, predicted_rating_3,numeric
+2018-personality-data.csv, movie_4,identifier
+2018-personality-data.csv, predicted_rating_4,numeric
+2018-personality-data.csv, movie_5,identifier
+2018-personality-data.csv, predicted_rating_5,numeric
+2018-personality-data.csv, movie_6,identifier
+2018-personality-data.csv, predicted_rating_6,numeric
+2018-personality-data.csv, movie_7,identifier
+2018-personality-data.csv, predicted_rating_7,numeric
+2018-personality-data.csv, movie_8,identifier
+2018-personality-data.csv, predicted_rating_8,numeric
+2018-personality-data.csv, movie_9,identifier
+2018-personality-data.csv, predicted_rating_9,numeric
+2018-personality-data.csv, movie_10,identifier
+2018-personality-data.csv, predicted_rating_10,numeric
+2018-personality-data.csv, movie_11,identifier
+2018-personality-data.csv, predicted_rating_11,numeric
+2018-personality-data.csv, movie_12,identifier
+2018-personality-data.csv, predicted_rating_12,numeric
+2018-personality-data.csv, is_personalized,categorical
+2018-personality-data.csv, enjoy_watching ,categorical
+FastagFraudDetection.csv,Transaction_ID,identifier
+FastagFraudDetection.csv,Timestamp,datetime
+FastagFraudDetection.csv,Vehicle_Type,categorical
+FastagFraudDetection.csv,FastagID,identifier
+FastagFraudDetection.csv,TollBoothID,identifier
+FastagFraudDetection.csv,Lane_Type,categorical
+FastagFraudDetection.csv,Vehicle_Dimensions,categorical
+FastagFraudDetection.csv,Transaction_Amount,numeric
+FastagFraudDetection.csv,Amount_paid,numeric
+FastagFraudDetection.csv,Geographical_Location,text
+FastagFraudDetection.csv,Vehicle_Speed,numeric
+FastagFraudDetection.csv,Vehicle_Plate_Number,identifier
+FastagFraudDetection.csv,Fraud_indicator,boolean
+states_all.csv,PRIMARY_KEY,identifier
+states_all.csv,STATE,categorical
+states_all.csv,YEAR,numeric
+states_all.csv,ENROLL,numeric
+states_all.csv,TOTAL_REVENUE,numeric
+states_all.csv,FEDERAL_REVENUE,numeric
+states_all.csv,STATE_REVENUE,numeric
+states_all.csv,LOCAL_REVENUE,numeric
+states_all.csv,TOTAL_EXPENDITURE,numeric
+states_all.csv,INSTRUCTION_EXPENDITURE,numeric
+states_all.csv,SUPPORT_SERVICES_EXPENDITURE,numeric
+states_all.csv,OTHER_EXPENDITURE,numeric
+states_all.csv,CAPITAL_OUTLAY_EXPENDITURE,numeric
+states_all.csv,GRADES_PK_G,numeric
+states_all.csv,GRADES_KG_G,numeric
+states_all.csv,GRADES_4_G,numeric
+states_all.csv,GRADES_8_G,numeric
+states_all.csv,GRADES_12_G,numeric
+states_all.csv,GRADES_1_8_G,numeric
+states_all.csv,GRADES_9_12_G,numeric
+states_all.csv,GRADES_ALL_G,numeric
+states_all.csv,AVG_MATH_4_SCORE,numeric
+states_all.csv,AVG_MATH_8_SCORE,numeric
+states_all.csv,AVG_READING_4_SCORE,numeric
+states_all.csv,AVG_READING_8_SCORE,numeric
+Testing.csv,itching,boolean
+Testing.csv,skin_rash,boolean
+Testing.csv,nodal_skin_eruptions,boolean
+Testing.csv,continuous_sneezing,boolean
+Testing.csv,shivering,boolean
+Testing.csv,chills,boolean
+Testing.csv,joint_pain,boolean
+Testing.csv,stomach_pain,boolean
+Testing.csv,acidity,boolean
+Testing.csv,ulcers_on_tongue,boolean
+Testing.csv,muscle_wasting,boolean
+Testing.csv,vomiting,boolean
+Testing.csv,burning_micturition,boolean
+Testing.csv,spotting_ urination,boolean
+Testing.csv,fatigue,boolean
+Testing.csv,weight_gain,boolean
+Testing.csv,anxiety,boolean
+Testing.csv,cold_hands_and_feets,boolean
+Testing.csv,mood_swings,boolean
+Testing.csv,weight_loss,boolean
+Testing.csv,restlessness,boolean
+Testing.csv,lethargy,boolean
+Testing.csv,patches_in_throat,boolean
+Testing.csv,irregular_sugar_level,boolean
+Testing.csv,cough,boolean
+Testing.csv,high_fever,boolean
+Testing.csv,sunken_eyes,boolean
+Testing.csv,breathlessness,boolean
+Testing.csv,sweating,boolean
+Testing.csv,dehydration,boolean
+Testing.csv,indigestion,boolean
+Testing.csv,headache,boolean
+Testing.csv,yellowish_skin,boolean
+Testing.csv,dark_urine,boolean
+Testing.csv,nausea,boolean
+Testing.csv,loss_of_appetite,boolean
+Testing.csv,pain_behind_the_eyes,boolean
+Testing.csv,back_pain,boolean
+Testing.csv,constipation,boolean
+Testing.csv,abdominal_pain,boolean
+Testing.csv,diarrhoea,boolean
+Testing.csv,mild_fever,boolean
+Testing.csv,yellow_urine,boolean
+Testing.csv,yellowing_of_eyes,boolean
+Testing.csv,acute_liver_failure,boolean
+Testing.csv,fluid_overload,boolean
+Testing.csv,swelling_of_stomach,boolean
+Testing.csv,swelled_lymph_nodes,boolean
+Testing.csv,malaise,boolean
+Testing.csv,blurred_and_distorted_vision,boolean
+Testing.csv,phlegm,boolean
+Testing.csv,throat_irritation,boolean
+Testing.csv,redness_of_eyes,boolean
+Testing.csv,sinus_pressure,boolean
+Testing.csv,runny_nose,boolean
+Testing.csv,congestion,boolean
+Testing.csv,chest_pain,boolean
+Testing.csv,weakness_in_limbs,boolean
+Testing.csv,fast_heart_rate,boolean
+Testing.csv,pain_during_bowel_movements,boolean
+Testing.csv,pain_in_anal_region,boolean
+Testing.csv,bloody_stool,boolean
+Testing.csv,irritation_in_anus,boolean
+Testing.csv,neck_pain,boolean
+Testing.csv,dizziness,boolean
+Testing.csv,cramps,boolean
+Testing.csv,bruising,boolean
+Testing.csv,obesity,boolean
+Testing.csv,swollen_legs,boolean
+Testing.csv,swollen_blood_vessels,boolean
+Testing.csv,puffy_face_and_eyes,boolean
+Testing.csv,enlarged_thyroid,boolean
+Testing.csv,brittle_nails,boolean
+Testing.csv,swollen_extremeties,boolean
+Testing.csv,excessive_hunger,boolean
+Testing.csv,extra_marital_contacts,boolean
+Testing.csv,drying_and_tingling_lips,boolean
+Testing.csv,slurred_speech,boolean
+Testing.csv,knee_pain,boolean
+Testing.csv,hip_joint_pain,boolean
+Testing.csv,muscle_weakness,boolean
+Testing.csv,stiff_neck,boolean
+Testing.csv,swelling_joints,boolean
+Testing.csv,movement_stiffness,boolean
+Testing.csv,spinning_movements,boolean
+Testing.csv,loss_of_balance,boolean
+Testing.csv,unsteadiness,boolean
+Testing.csv,weakness_of_one_body_side,boolean
+Testing.csv,loss_of_smell,boolean
+Testing.csv,bladder_discomfort,boolean
+Testing.csv,foul_smell_of urine,boolean
+Testing.csv,continuous_feel_of_urine,boolean
+Testing.csv,passage_of_gases,boolean
+Testing.csv,internal_itching,boolean
+Testing.csv,toxic_look_(typhos),boolean
+Testing.csv,depression,boolean
+Testing.csv,irritability,boolean
+Testing.csv,muscle_pain,boolean
+Testing.csv,altered_sensorium,boolean
+Testing.csv,red_spots_over_body,boolean
+Testing.csv,belly_pain,boolean
+Testing.csv,abnormal_menstruation,boolean
+Testing.csv,dischromic _patches,boolean
+Testing.csv,watering_from_eyes,boolean
+Testing.csv,increased_appetite,boolean
+Testing.csv,polyuria,boolean
+Testing.csv,family_history,boolean
+Testing.csv,mucoid_sputum,boolean
+Testing.csv,rusty_sputum,boolean
+Testing.csv,lack_of_concentration,boolean
+Testing.csv,visual_disturbances,boolean
+Testing.csv,receiving_blood_transfusion,boolean
+Testing.csv,receiving_unsterile_injections,boolean
+Testing.csv,coma,boolean
+Testing.csv,stomach_bleeding,boolean
+Testing.csv,distention_of_abdomen,boolean
+Testing.csv,history_of_alcohol_consumption,boolean
+Testing.csv,fluid_overload.1,boolean
+Testing.csv,blood_in_sputum,boolean
+Testing.csv,prominent_veins_on_calf,boolean
+Testing.csv,palpitations,boolean
+Testing.csv,painful_walking,boolean
+Testing.csv,pus_filled_pimples,boolean
+Testing.csv,blackheads,boolean
+Testing.csv,scurring,boolean
+Testing.csv,skin_peeling,boolean
+Testing.csv,silver_like_dusting,boolean
+Testing.csv,small_dents_in_nails,boolean
+Testing.csv,inflammatory_nails,boolean
+Testing.csv,blister,boolean
+Testing.csv,red_sore_around_nose,boolean
+Testing.csv,yellow_crust_ooze,boolean
+Testing.csv,prognosis,categorical
+metadata.csv,Recording_ID,identifier
+metadata.csv,Genus,categorical
+metadata.csv,Specific_epithet,categorical
+metadata.csv,Subspecies,categorical
+metadata.csv,English_name,categorical
+metadata.csv,Recordist,categorical
+metadata.csv,Country,categorical
+metadata.csv,Locality,text
+metadata.csv,Latitude,numeric
+metadata.csv,Longitude,numeric
+metadata.csv,Vocalization_type,categorical
+metadata.csv,Audio_file,text
+metadata.csv,License,categorical
+metadata.csv,Url,text
+metadata.csv,Quality,categorical
+metadata.csv,Time,time
+metadata.csv,Date,datetime
+metadata.csv,Altitude,numeric
+metadata.csv,file.name,text
+metadata.csv,Spectrogram_small,text
+metadata.csv,Spectrogram_med,text
+metadata.csv,Spectrogram_large,text
+metadata.csv,Spectrogram_full,text
+metadata.csv,Length,numeric
+metadata.csv,Uploaded,datetime
+metadata.csv,Other_species,categorical
+metadata.csv,Remarks,text
+metadata.csv,Bird_seen,boolean
+metadata.csv,Playback_used,boolean
+metadata.csv,Other_species1,categorical
+metadata.csv,Other_species2,categorical
+metadata.csv,Other_species3,categorical
+metadata.csv,Other_species4,categorical
+metadata.csv,Other_species5,categorical
+metadata.csv,Other_species6,categorical
+metadata.csv,Other_species7,categorical
+metadata.csv,Other_species8,categorical
+metadata.csv,Other_species9,categorical
+metadata.csv,Other_species10,categorical
+metadata.csv,Other_species11,categorical
+metadata.csv,Other_species12,categorical
+metadata.csv,Other_species13,categorical
+metadata.csv,Other_species14,categorical
+metadata.csv,Other_species15,categorical
+metadata.csv,Other_species16,categorical
+metadata.csv,Other_species17,categorical
+metadata.csv,Other_species18,categorical
+metadata.csv,Other_species19,categorical
+metadata.csv,Other_species20,categorical
+metadata.csv,Other_species21,categorical
+metadata.csv,Other_species22,categorical
+metadata.csv,Other_species23,numeric
+metadata.csv,Other_species24,numeric
+metadata.csv,Other_species25,numeric
+metadata.csv,Other_species26,numeric
+metadata.csv,Other_species27,numeric
+metadata.csv,Other_species28,numeric
+metadata.csv,Other_species29,numeric
+metadata.csv,Other_species30,numeric
+metadata.csv,Species,categorical
+metadata.csv,Path,text
+analystm_mode_1_v1.csv,Votes_for_Home,numeric
+analystm_mode_1_v1.csv,Votes_for_Draw,numeric
+analystm_mode_1_v1.csv,Votes_for_Away,numeric
+analystm_mode_1_v1.csv,Weekday,categorical
+analystm_mode_1_v1.csv,Day,categorical
+analystm_mode_1_v1.csv,Month,categorical
+analystm_mode_1_v1.csv,Year,numeric
+analystm_mode_1_v1.csv,Hour,categorical
+analystm_mode_1_v1.csv,Minute,categorical
+analystm_mode_1_v1.csv,Total_Bettors,numeric
+analystm_mode_1_v1.csv,Bet_Perc_on_Home,numeric
+analystm_mode_1_v1.csv,Bet_Perc_on_Draw,numeric
+analystm_mode_1_v1.csv,Bet_Perc_on_Away,numeric
+analystm_mode_1_v1.csv,Team_1,categorical
+analystm_mode_1_v1.csv,Team_2,categorical
+analystm_mode_1_v1.csv,League_Rank_1,numeric
+analystm_mode_1_v1.csv,League_Rank_2,numeric
+analystm_mode_1_v1.csv,Total_teams,numeric
+analystm_mode_1_v1.csv,Games_played_1,numeric
+analystm_mode_1_v1.csv,Games_played_2,numeric
+analystm_mode_1_v1.csv,Points_1,numeric
+analystm_mode_1_v1.csv,Points_2,numeric
+analystm_mode_1_v1.csv,Max_points,numeric
+analystm_mode_1_v1.csv,Min_points,numeric
+analystm_mode_1_v1.csv,Won_1,numeric
+analystm_mode_1_v1.csv,Draw_1,numeric
+analystm_mode_1_v1.csv,Lost_1,numeric
+analystm_mode_1_v1.csv,Won_2,numeric
+analystm_mode_1_v1.csv,Draw_2,numeric
+analystm_mode_1_v1.csv,Lost_2,numeric
+analystm_mode_1_v1.csv,Goals_Scored_1,numeric
+analystm_mode_1_v1.csv,Goals_Scored_2,numeric
+analystm_mode_1_v1.csv,Goals_Rec_1,numeric
+analystm_mode_1_v1.csv,Goal_Rec_2,numeric
+analystm_mode_1_v1.csv,Goals_Diff_1,numeric
+analystm_mode_1_v1.csv,Goals_Diff_2,numeric
+analystm_mode_1_v1.csv,Team_1_Found,categorical
+analystm_mode_1_v1.csv,Team_2_Found,categorical
+analystm_mode_1_v1.csv,Rank_1,numeric
+analystm_mode_1_v1.csv,Rank_2,numeric
+analystm_mode_1_v1.csv,Win_Perc_1,numeric
+analystm_mode_1_v1.csv,Win_Perc_2,numeric
+analystm_mode_1_v1.csv,League_type_country,categorical
+analystm_mode_1_v1.csv,Draw_Perc_1,numeric
+analystm_mode_1_v1.csv,Draw_Perc_2,numeric
+analystm_mode_1_v1.csv,Large_Diff_win,numeric
+analystm_mode_1_v1.csv,Won_out_of_6,numeric
+analystm_mode_1_v1.csv,Avrage_FT_Goal,numeric
+analystm_mode_1_v1.csv,Average_HT_Goal,numeric
+analystm_mode_1_v1.csv,Number_of_H2H_matches,numeric
+analystm_mode_1_v1.csv,Jumps,numeric
+analystm_mode_1_v1.csv,Odds_Home,numeric
+analystm_mode_1_v1.csv,Odds_Draw,numeric
+analystm_mode_1_v1.csv,Odds_Away,numeric
+analystm_mode_1_v1.csv,Country_1,categorical
+analystm_mode_1_v1.csv,Country_2,categorical
+analystm_mode_1_v1.csv,Detail_H2H,unknown
+analystm_mode_1_v1.csv,Indices_home,unknown
+analystm_mode_1_v1.csv,Indices_draw,unknown
+analystm_mode_1_v1.csv,Indices_away,unknown
+analystm_mode_1_v1.csv,Results_1,unknown
+analystm_mode_1_v1.csv,Results_2,unknown
+Stress_Dataset.csv,Gender,categorical
+Stress_Dataset.csv,Age,numeric
+Stress_Dataset.csv,Have you recently experienced stress in your life?,categorical
+Stress_Dataset.csv,Have you noticed a rapid heartbeat or palpitations?,categorical
+Stress_Dataset.csv,Have you been dealing with anxiety or tension recently?,categorical
+Stress_Dataset.csv,Do you face any sleep problems or difficulties falling asleep?,categorical
+Stress_Dataset.csv,Have you been dealing with anxiety or tension recently?.1,categorical
+Stress_Dataset.csv,Have you been getting headaches more often than usual?,categorical
+Stress_Dataset.csv,Do you get irritated easily?,categorical
+Stress_Dataset.csv,Do you have trouble concentrating on your academic tasks?,categorical
+Stress_Dataset.csv,Have you been feeling sadness or low mood?,categorical
+Stress_Dataset.csv,Have you been experiencing any illness or health issues?,categorical
+Stress_Dataset.csv,Do you often feel lonely or isolated?,categorical
+Stress_Dataset.csv,Do you feel overwhelmed with your academic workload?,categorical
+Stress_Dataset.csv,"Are you in competition with your peers, and does it affect you?",categorical
+Stress_Dataset.csv,Do you find that your relationship often causes you stress?,categorical
+Stress_Dataset.csv,Are you facing any difficulties with your professors or instructors?,categorical
+Stress_Dataset.csv,Is your working environment unpleasant or stressful?,categorical
+Stress_Dataset.csv,Do you struggle to find time for relaxation and leisure activities?,categorical
+Stress_Dataset.csv,Is your hostel or home environment causing you difficulties?,categorical
+Stress_Dataset.csv,Do you lack confidence in your academic performance?,categorical
+Stress_Dataset.csv,Do you lack confidence in your choice of academic subjects?,categorical
+Stress_Dataset.csv,Academic and extracurricular activities conflicting for you?,categorical
+Stress_Dataset.csv,Do you attend classes regularly?,categorical
+Stress_Dataset.csv,Have you gained/lost weight?,categorical
+Stress_Dataset.csv,Which type of stress do you primarily experience?,categorical
+StressLevelDataset.csv,anxiety_level,numeric
+StressLevelDataset.csv,self_esteem,numeric
+StressLevelDataset.csv,mental_health_history,boolean
+StressLevelDataset.csv,depression,numeric
+StressLevelDataset.csv,headache,categorical
+StressLevelDataset.csv,blood_pressure,categorical
+StressLevelDataset.csv,sleep_quality,categorical
+StressLevelDataset.csv,breathing_problem,categorical
+StressLevelDataset.csv,noise_level,categorical
+StressLevelDataset.csv,living_conditions,categorical
+StressLevelDataset.csv,safety,categorical
+StressLevelDataset.csv,basic_needs,categorical
+StressLevelDataset.csv,academic_performance,categorical
+StressLevelDataset.csv,study_load,categorical
+StressLevelDataset.csv,teacher_student_relationship,categorical
+StressLevelDataset.csv,future_career_concerns,categorical
+StressLevelDataset.csv,social_support,categorical
+StressLevelDataset.csv,peer_pressure,categorical
+StressLevelDataset.csv,extracurricular_activities,categorical
+StressLevelDataset.csv,bullying,categorical
+StressLevelDataset.csv,stress_level,categorical
+meningitis_dataset.csv,id,identifier
+meningitis_dataset.csv,surname,text
+meningitis_dataset.csv,firstname,text
+meningitis_dataset.csv,middlename,text
+meningitis_dataset.csv,gender,categorical
+meningitis_dataset.csv,gender_male,boolean
+meningitis_dataset.csv,gender_female,boolean
+meningitis_dataset.csv,state,categorical
+meningitis_dataset.csv,settlement,categorical
+meningitis_dataset.csv,rural_settlement,boolean
+meningitis_dataset.csv,urban_settlement,boolean
+meningitis_dataset.csv,report_date,datetime
+meningitis_dataset.csv,report_year,numeric
+meningitis_dataset.csv,age,numeric
+meningitis_dataset.csv,age_str,numeric
+meningitis_dataset.csv,date_of_birth,datetime
+meningitis_dataset.csv,child_group,boolean
+meningitis_dataset.csv,adult_group,boolean
+meningitis_dataset.csv,disease,categorical
+meningitis_dataset.csv,cholera,boolean
+meningitis_dataset.csv,diarrhoea,boolean
+meningitis_dataset.csv,measles,boolean
+meningitis_dataset.csv,viral_haemmorrhaphic_fever,boolean
+meningitis_dataset.csv,meningitis,boolean
+meningitis_dataset.csv,ebola,boolean
+meningitis_dataset.csv,marburg_virus,boolean
+meningitis_dataset.csv,yellow_fever,boolean
+meningitis_dataset.csv,rubella_mars,boolean
+meningitis_dataset.csv,malaria,boolean
+meningitis_dataset.csv,serotype,categorical
+meningitis_dataset.csv,NmA,boolean
+meningitis_dataset.csv,NmC,boolean
+meningitis_dataset.csv,NmW,boolean
+meningitis_dataset.csv,health_status,categorical
+meningitis_dataset.csv,alive,boolean
+meningitis_dataset.csv,dead,boolean
+meningitis_dataset.csv,report_outcome,categorical
+meningitis_dataset.csv,unconfirmed,boolean
+meningitis_dataset.csv,confirmed,boolean
+meningitis_dataset.csv,null_serotype,boolean
+cosmetics.csv,Label,categorical
+cosmetics.csv,Brand,categorical
+cosmetics.csv,Name,text
+cosmetics.csv,Price,numeric
+cosmetics.csv,Rank,numeric
+cosmetics.csv,Ingredients,text
+cosmetics.csv,Combination,boolean
+cosmetics.csv,Dry,boolean
+cosmetics.csv,Normal,boolean
+cosmetics.csv,Oily,boolean
+cosmetics.csv,Sensitive,boolean
+01-test2.csv,Weight,numeric
+01-test2.csv,Colour,categorical
+01-test2-labels.csv,Label,categorical
+01-train.csv,Weight,numeric
+01-train.csv,Colour,categorical
+01-train.csv,Label,categorical
+10kcc.csv,Time,numeric
+10kcc.csv,V1,numeric
+10kcc.csv,V2,numeric
+10kcc.csv,V3,numeric
+10kcc.csv,V4,numeric
+10kcc.csv,V5,numeric
+10kcc.csv,V6,numeric
+10kcc.csv,V7,numeric
+10kcc.csv,V8,numeric
+10kcc.csv,V9,numeric
+10kcc.csv,V10,numeric
+10kcc.csv,V11,numeric
+10kcc.csv,V12,numeric
+10kcc.csv,V13,numeric
+10kcc.csv,V14,numeric
+10kcc.csv,V15,numeric
+10kcc.csv,V16,numeric
+10kcc.csv,V17,numeric
+10kcc.csv,V18,numeric
+10kcc.csv,V19,numeric
+10kcc.csv,V20,numeric
+10kcc.csv,V21,numeric
+10kcc.csv,V22,numeric
+10kcc.csv,V23,numeric
+10kcc.csv,V24,numeric
+10kcc.csv,V25,numeric
+10kcc.csv,V26,numeric
+10kcc.csv,V27,numeric
+10kcc.csv,V28,numeric
+10kcc.csv,Amount,numeric
+10kcc.csv,Class,boolean
+movie-test.csv,userId,identifier
+movie-test.csv,movieId,identifier
+movie-test.csv,rating,numeric
+movie-train.csv,userId,identifier
+movie-train.csv,movieId,identifier
+movie-train.csv,rating,numeric
+pima-indians-diabetes.csv,6,unknown
+pima-indians-diabetes.csv,148,unknown
+pima-indians-diabetes.csv,72,unknown
+pima-indians-diabetes.csv,35,unknown
+pima-indians-diabetes.csv,0,unknown
+pima-indians-diabetes.csv,33.6,unknown
+pima-indians-diabetes.csv,0.627,unknown
+pima-indians-diabetes.csv,50,unknown
+pima-indians-diabetes.csv,1,unknown
+wine_data.csv,1,unknown
+wine_data.csv,14.23,unknown
+wine_data.csv,1.71,unknown
+wine_data.csv,2.43,unknown
+wine_data.csv,15.6,unknown
+wine_data.csv,127,unknown
+wine_data.csv,2.8,unknown
+wine_data.csv,3.06,unknown
+wine_data.csv,.28,unknown
+wine_data.csv,2.29,unknown
+wine_data.csv,5.64,unknown
+wine_data.csv,1.04,unknown
+wine_data.csv,3.92,unknown
+wine_data.csv,1065,unknown
+00-fruits.csv,Weight,numeric
+00-fruits.csv,Colour,categorical
+00-fruits.csv,Label,categorical
+01-fruits.csv,Weight,numeric
+01-fruits.csv,Colour,categorical
+01-fruits.csv,Seeds,numeric
+01-fruits-labelled.csv,Weight,numeric
+01-fruits-labelled.csv,Colour,categorical
+01-fruits-labelled.csv,Seeds,numeric
+01-fruits-labelled.csv,Label,categorical
+01-fruits-labels.csv,Label,categorical
+01-test1.csv,Weight,numeric
+01-test1.csv,Colour,categorical
+01-test1-labelled.csv,Weight,numeric
+01-test1-labelled.csv,Colour,categorical
+01-test1-labelled.csv,Label,categorical
+01-test1-labels.csv,Label,categorical
+01-test2-labelled.csv,Weight,numeric
+01-test2-labelled.csv,Colour,categorical
+01-test2-labelled.csv,Label,categorical
+diff_result_20_dataset.csv,col_1,numeric
+diff_result_20_dataset.csv,col_2,numeric
+diff_result_20_dataset.csv,col_3,numeric
+diff_result_20_dataset.csv,col_4,numeric
+diff_result_20_dataset.csv,col_5,numeric
+diff_result_20_dataset.csv,col_6,numeric
+diff_result_20_dataset.csv,col_7,numeric
+diff_result_20_dataset.csv,col_8,numeric
+diff_result_20_dataset.csv,col_9,numeric
+diff_result_20_dataset.csv,col_10,numeric
+diff_result_20_dataset.csv,col_11,numeric
+diff_result_20_dataset.csv,col_12,numeric
+diff_result_20_dataset.csv,col_13,numeric
+diff_result_20_dataset.csv,col_14,numeric
+diff_result_20_dataset.csv,col_15,numeric
+diff_result_20_dataset.csv,col_16,numeric
+diff_result_20_dataset.csv,col_17,numeric
+diff_result_20_dataset.csv,col_18,numeric
+diff_result_20_dataset.csv,col_19,numeric
+diff_result_20_dataset.csv,col_20,numeric
+diff_result_20_dataset.csv,result,numeric
+players_15.csv,sofifa_id,identifier
+players_15.csv,player_url,text
+players_15.csv,short_name,text
+players_15.csv,long_name,text
+players_15.csv,age,numeric
+players_15.csv,dob,datetime
+players_15.csv,height_cm,numeric
+players_15.csv,weight_kg,numeric
+players_15.csv,nationality,categorical
+players_15.csv,club,categorical
+players_15.csv,overall,numeric
+players_15.csv,potential,numeric
+players_15.csv,value_eur,numeric
+players_15.csv,wage_eur,numeric
+players_15.csv,player_positions,categorical
+players_15.csv,preferred_foot,categorical
+players_15.csv,international_reputation,categorical
+players_15.csv,weak_foot,categorical
+players_15.csv,skill_moves,categorical
+players_15.csv,work_rate,categorical
+players_15.csv,body_type,categorical
+players_15.csv,real_face,boolean
+players_15.csv,release_clause_eur,numeric
+players_15.csv,player_tags,categorical
+players_15.csv,team_position,categorical
+players_15.csv,team_jersey_number,categorical
+players_15.csv,loaned_from,categorical
+players_15.csv,joined,datetime
+players_15.csv,contract_valid_until,numeric
+players_15.csv,nation_position,categorical
+players_15.csv,nation_jersey_number,categorical
+players_15.csv,pace,numeric
+players_15.csv,shooting,numeric
+players_15.csv,passing,numeric
+players_15.csv,dribbling,numeric
+players_15.csv,defending,numeric
+players_15.csv,physic,numeric
+players_15.csv,gk_diving,numeric
+players_15.csv,gk_handling,numeric
+players_15.csv,gk_kicking,numeric
+players_15.csv,gk_reflexes,numeric
+players_15.csv,gk_speed,numeric
+players_15.csv,gk_positioning,numeric
+players_15.csv,player_traits,categorical
+players_15.csv,attacking_crossing,numeric
+players_15.csv,attacking_finishing,numeric
+players_15.csv,attacking_heading_accuracy,numeric
+players_15.csv,attacking_short_passing,numeric
+players_15.csv,attacking_volleys,numeric
+players_15.csv,skill_dribbling,numeric
+players_15.csv,skill_curve,numeric
+players_15.csv,skill_fk_accuracy,numeric
+players_15.csv,skill_long_passing,numeric
+players_15.csv,skill_ball_control,numeric
+players_15.csv,movement_acceleration,numeric
+players_15.csv,movement_sprint_speed,numeric
+players_15.csv,movement_agility,numeric
+players_15.csv,movement_reactions,numeric
+players_15.csv,movement_balance,numeric
+players_15.csv,power_shot_power,numeric
+players_15.csv,power_jumping,numeric
+players_15.csv,power_stamina,numeric
+players_15.csv,power_strength,numeric
+players_15.csv,power_long_shots,numeric
+players_15.csv,mentality_aggression,numeric
+players_15.csv,mentality_interceptions,numeric
+players_15.csv,mentality_positioning,numeric
+players_15.csv,mentality_vision,numeric
+players_15.csv,mentality_penalties,numeric
+players_15.csv,mentality_composure,numeric
+players_15.csv,defending_marking,numeric
+players_15.csv,defending_standing_tackle,numeric
+players_15.csv,defending_sliding_tackle,numeric
+players_15.csv,goalkeeping_diving,numeric
+players_15.csv,goalkeeping_handling,numeric
+players_15.csv,goalkeeping_kicking,numeric
+players_15.csv,goalkeeping_positioning,numeric
+players_15.csv,goalkeeping_reflexes,numeric
+players_15.csv,ls,numeric
+players_15.csv,st,numeric
+players_15.csv,rs,numeric
+players_15.csv,lw,numeric
+players_15.csv,lf,numeric
+players_15.csv,cf,numeric
+players_15.csv,rf,numeric
+players_15.csv,rw,numeric
+players_15.csv,lam,numeric
+players_15.csv,cam,numeric
+players_15.csv,ram,numeric
+players_15.csv,lm,numeric
+players_15.csv,lcm,numeric
+players_15.csv,cm,numeric
+players_15.csv,rcm,numeric
+players_15.csv,rm,numeric
+players_15.csv,lwb,numeric
+players_15.csv,ldm,numeric
+players_15.csv,cdm,numeric
+players_15.csv,rdm,numeric
+players_15.csv,rwb,numeric
+players_15.csv,lb,numeric
+players_15.csv,lcb,numeric
+players_15.csv,cb,numeric
+players_15.csv,rcb,numeric
+players_15.csv,rb,numeric
+Amazon Echo 2 Reviews.csv,Pageurl,text
+Amazon Echo 2 Reviews.csv,Title,text
+Amazon Echo 2 Reviews.csv,Review Text,text
+Amazon Echo 2 Reviews.csv,Review Color,categorical
+Amazon Echo 2 Reviews.csv,User Verified,boolean
+Amazon Echo 2 Reviews.csv,Review Date,datetime
+Amazon Echo 2 Reviews.csv,Review Useful Count,numeric
+Amazon Echo 2 Reviews.csv,Configuration Text,categorical
+Amazon Echo 2 Reviews.csv,Rating,numeric
+Amazon Echo 2 Reviews.csv,Declaration Text,categorical
